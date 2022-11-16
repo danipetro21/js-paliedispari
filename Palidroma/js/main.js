@@ -8,7 +8,6 @@ let input = prompt("inserisci una parola");
 
 
 
-// carico la parola nell'array (ogni lettera equivale ad una posizione nell'array)
 let j = input.length - 1;
 
 
