@@ -8,25 +8,23 @@ let input = prompt("inserisci una parola");
 
 
 
-let j = input.length - 1;
+function palindroma(input) {
+    let contatore = 0;
+    let j = input.length - 1;
 
+    for (let i = 0; i < input.length; i++) {
+        if (input.charAt(i) === input.charAt(j)) {
+            contatore++;
+            j--;
+        }
+    }
 
-
-let contatore = 0;
-
-
-for (let i = 0 ; i<input.length; i++){
-    if (input.charAt(i) === input.charAt(j)){
-
-        contatore++;
-        j--;
-
-
-}
+    return contatore;
 }
 
-console.log(contatore);
-if(contatore == input.length){
+
+
+if (palindroma(input) == input.length) {
     alert("parola palindroma");
 
 } else {
